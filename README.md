@@ -17,7 +17,7 @@ This project is a simple web application that allows users to encrypt and decryp
 
   ## Installation
 
-  1. Clone the repository:
+1. Clone the repository:
     ```bash
     git clone https://github.com/kuldip024/text-encryption-decryption.git
     cd text-encryption-decryption
