@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Encryption and Decryption</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Text Encryption and Decryption</h1>
+        <div class="card">
+            <h2>Encrypt</h2>
+            <textarea id="inputText" placeholder="Enter text to encrypt..."></textarea>
+            <button onclick="encryptText()">Encrypt</button>
+            <textarea id="outputText" readonly placeholder="Encrypted text will appear here..."></textarea>
+        </div>
+        <div class="card">
+            <h2>Decrypt</h2>
+            <textarea id="encryptedText" placeholder="Enter text to decrypt..."></textarea>
+            <button onclick="decryptText()">Decrypt</button>
+            <textarea id="decryptedText" readonly placeholder="Decrypted text will appear here..."></textarea>
+        </div>
+    </div>
+    <footer>
+        <ul>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Instagram</a></li>
+        </ul>
+    </footer>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
